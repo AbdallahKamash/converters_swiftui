@@ -189,6 +189,12 @@ struct ContentView: View {
                 inputUnit = units.first ?? ""
                 outputUnit = units.last ?? ""
             }
+        }.safeAreaInset(edge: .bottom, spacing: 0) {
+            VStack {
+                Text("Project 2 - Abdallah Kamash")
+            }
+            .foregroundColor(.secondary)
+            .ignoresSafeArea(.all, edges: .bottom) // Extends background to the edge
         }
     }
 }
